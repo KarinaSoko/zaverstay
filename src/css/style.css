@@ -1,0 +1,360 @@
+body {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #2E2F22;
+}
+
+.Header {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/headeImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 581px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 83px;
+
+}
+
+.logo {
+    height: 82.5px;
+    margin-left: 120px;
+    margin-top: 4px;
+}
+
+.header-nav {
+    width: 50%;
+}
+
+.nav-list {
+    min-width: 440px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 121px;
+    font-family: "open Sans";
+    font-size: 18px;
+    color: #2E2F22;
+    
+}
+.text_nav_list{
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #2E2F22;
+}
+
+.article_1 {
+    margin-right: 10px;
+}
+
+.article_2 {
+    margin-right: 10px;
+}
+
+.article_4 {
+    background-image: url('../img/image\ 4\ \(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 590px;
+    height: 552px;
+    margin-right: 10px;
+    margin-bottom: 106PX;
+}
+
+.article_5 {
+    background-image: url('../img/image\ 5\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 590px;
+    height: 552px;
+}
+
+h2 {
+    font-family: "Spectral SC";
+    font-size: 36px;
+    font-weight: 700;
+    color: #2E2F22;
+
+
+}
+
+.bigger_h3 {
+    font-family: "Spectral SC";
+    font-size: 20px;
+    font-weight: 700;
+    color: #2E2F22;
+    margin-top: 140px;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+h3 {
+    font-family: "Spectral SC";
+    font-size: 18px;
+    font-weight: 700;
+    color: #2E2F22;
+    margin-top: 27px;
+    margin-bottom: 8px;
+}
+
+.mini_h3_port {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.tag_data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.tag {
+    color: rgba(46, 47, 34, 0.70);
+}
+
+.data {
+    color: rgba(46, 47, 34, 0.70);
+}
+
+.oll_articles {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description {
+    width: 387px;
+    margin-bottom: 12px;
+}
+
+.exchange {
+    font-size: 16px;
+    display: flex;
+    background-color: #D7D1C9;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.exchange::after {
+    margin-left: 33px;
+    content: "";
+    width: 22px;
+    height: 20px;
+    display: block;
+    background-image: url("../img/Polygon\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-block-white {
+    color: #FFF;
+    margin-left: 92px;
+    margin-right: 80px;
+    margin-top: 361px;
+}
+
+.text_white {
+    color: #FFF;
+}
+
+.text_white_transparent {
+    color: rgba(255, 255, 255, 0.70);
+
+
+}
+
+.button {
+
+    width: 224px;
+    border-radius: 10px;
+    border: 1px solid #202117;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    margin-bottom: 85px;
+    font-family: "Open Sans";
+    color: #2E2F22;
+}
+
+.button_text {
+    font-size: 16px;
+    margin: 12px auto;
+}
+
+.section_about_me {
+    width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+}
+
+.title_about_me {
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.about_me {
+    display: flex;
+}
+
+.all_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text_about_me {
+    width: 497px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #2E2F22;
+    line-height: 26px;
+    padding-top: 42px;
+    margin-left: 40px;
+}
+
+.quote {
+    width: 500px;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 40px;
+    padding: 27px 20px;
+    border-left: 3px solid #D7D1C9;
+    margin-left: 20px;
+}
+
+.p-quote {
+    margin: 0;
+}
+
+a {
+    color: #2E2F22;
+}
+
+.section_portfolio {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title_portfolio {
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.papers {
+    display: flex;
+    justify-content: space-between;
+    height: 525px;
+    margin-bottom: 104px;
+}
+
+.paper1 {
+    width: 380px;
+    background-image: url(../img/portfolio1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 26px;
+}
+
+.paper2 {
+    width: 380px;
+    background-image: url(../img/portfolio2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 26px;
+}
+
+.paper3 {
+    width: 400px;
+    background-image: url(../img/portfolio3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 26px;
+}
+
+.text_port {
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.title_write_me {
+    text-align: center;
+}
+
+.section_write_me {
+    background-image: url(../img/writeMe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    height: 660px;
+    width: 1000px;
+    margin-bottom: 80px;
+}
+
+.form_write_me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.text_in_form {
+    width: 407px;
+    border-radius: 10px;
+    border: 1px solid #202117;
+    background: rgba(255, 255, 255, 0.40);
+    color: #202117;
+    opacity: 0.7;
+    padding: 20px;
+    
+
+}
+.square{
+    width: 870px;
+height: 293px;
+margin-bottom: 20px;
+}
+.button_write_me{
+    background: rgba(255, 255, 255, 0);
+    
+}
+.footer{
+    background-color: #D7D1C9;
+    width: 100%;
+}
+.network_list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    list-style: none;
+    width: 40%;
+    min-width: 500px;
+    padding: 0;
+    padding-top: 65px ; 
+    padding-bottom: 91px; 
+}
+.network_list_items{
+    text-decoration: none;
+    font-family: "open Sans";
+    font-size: 18px;
+    color: #2E2F22;
+}
