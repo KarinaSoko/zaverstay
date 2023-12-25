@@ -34,9 +34,19 @@
     <div class="main-content">
         <div class="oll_articles">
             <h2>Все статьи</h2>
-            <button class="exchange">
-                Выбрать тему
-            </button>
+            <form>
+                <!-- <label for="elements">Выбрать тему</label> -->
+                <div class="exchange">
+                    <label for="elements">Выбрать тему</label>
+                    <select class="select"  id="elements" name="elements">
+                        <option value="sity">Город</option>
+                        <option value="books">Книги</option>
+                        <option value="trips">Путешествия</option>
+                        <option value="recipes">Рецепты</option>
+                        <option value="photos">Фотографии</option>
+                    </select>
+                </div>
+            </form>
         </div>
         <section class="articles">
             <div class="article_1_2_3">

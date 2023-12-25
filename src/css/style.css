@@ -172,6 +172,15 @@ h3 {
     background-position: center;
 }
 
+.select {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .text-block-white {
     color: #FFF;
     margin-left: 92px;
