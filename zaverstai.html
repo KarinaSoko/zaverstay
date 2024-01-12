@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="Header">
+    <header class="Header_1">
         <img class="logo" src="src/img/logo.svg" width="130">
         <nav class="header-nav">
             <ul class="nav-list">
@@ -38,7 +38,7 @@
                 <!-- <label for="elements">Выбрать тему</label> -->
                 <div class="exchange">
                     <label for="elements">Выбрать тему</label>
-                    <select class="select"  id="elements" name="elements">
+                    <select class="select" id="elements" name="elements">
                         <option value="sity">Город</option>
                         <option value="books">Книги</option>
                         <option value="trips">Путешествия</option>
@@ -202,29 +202,25 @@
     </div>
     <h2 class="title_write_me">Написать мне</h2>
 
-    <!-- <div class="section_write_me"> -->
-    <div class="form_write_me">
+    <form class="form_write_me">
         <div class="form_inputs">
             <div class="form_name">
-                <h3 class="title_you_name">Ваше имя</h3>
-                <div class="text_in_form">Иван Иванов</div>
+                <h3 class="title_form_write_me"><label for="name" class="title_you_name">Ваше имя</label></h3>
+                <input class="text_in_form" type="text" name="name" id="name" placeholder="Иван Иванов" required>
             </div>
             <div class="form_email">
-                <h3 class="title_you_name">Email</h3>
-                <div class="text_in_form">google@gmail.com</div>
+                <h3 class="title_form_write_me"><label for="Email" class="title_you_name">Email</label></h3>
+
+                <input class="text_in_form" type="email" name="Email" id="Email" placeholder="google@gmail.com" required>
             </div>
         </div>
         <div class="form_message">
-            <h3 class="title_you_name">Сообщение</h3>
-            <div class="text_in_form square">Напишите здесь ваше сообщение.</div>
+            <h3 class="title_form_write_me"><label for="message" class="title_you_name">Сообщение</label></h3>
+            <textarea placeholder="Напишите здесь ваше сообщение." class="text_in_form" name="message" id="message" rows="12" required ></textarea>
         </div>
-        <button class="button button_write_me">
-            <p class="button_text "> Отправить</p>
-        </button>
-    </div>
 
-    <!-- </div> -->
-
+        <input class="button button_write_me button_text" type="submit" value="Отправить">
+    </form>
     <footer class="footer">
         <ul class="network_list">
             <li><a class="network_list_items" href="#">ВК</a></li>
@@ -233,6 +229,7 @@
             <li><a class="network_list_items" href="#">Твиттер</a></li>
         </ul>
     </footer>
+
 </body>
 
 </html>
