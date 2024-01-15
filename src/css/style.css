@@ -18,6 +18,7 @@ body {
     margin-bottom: 85px;
 
 }
+
 .Header_2 {
     margin: 0;
     padding: 0;
@@ -67,30 +68,31 @@ body {
 
     /* height: 1290px; */
 }
-.articles {
-    
-   
-}
-.article_1_2_3{
+
+.articles {}
+
+.article_1_2_3 {
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.article_4_5{
+
+.article_4_5 {
     margin-bottom: 104px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
+
 .article_4 {
     background-image: url('../img/image\ 4\ \(2\).jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 590px;
     height: 552px;
-   
+
 }
 
 .article_5 {
@@ -139,7 +141,7 @@ h3 {
 .tag_date {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .tag {
@@ -220,7 +222,7 @@ h3 {
     padding: 0;
     font-family: "Open Sans";
     color: #2E2F22;
-    
+
 }
 
 .button_text {
@@ -357,10 +359,12 @@ a {
     display: flex;
     justify-content: space-between;
 }
-input{
+
+input {
     width: 367px;
 }
-textarea{
+
+textarea {
     width: 797px;
     margin-bottom: 20px;
     font-family: "Open Sans";
@@ -368,12 +372,14 @@ textarea{
     color: #202117;
     opacity: 0.7;
 }
-.title_form_write_me{
+
+.title_form_write_me {
     margin-top: 20px;
     margin-bottom: 12px;
 }
+
 .form_message {
-    
+
     margin: 0 80px;
 }
 
@@ -388,7 +394,7 @@ textarea{
     font-size: 16px;
     color: #202117;
     opacity: 0.7;
-    
+
 }
 
 .square {
@@ -427,4 +433,177 @@ textarea{
 
 .title_you_name {
     margin: 0;
+}
+
+.title_articles {
+    margin-bottom: 6px;
+}
+
+.articles {
+    width: 997px;
+    margin-left: 120px;
+    margin-bottom: 65px;
+}
+
+.tag_date_2 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.tag_2 {
+    margin-top: 0;
+    margin-right: 18px;
+}
+
+.date_2 {
+    margin-top: 0;
+}
+
+.text_in_article {
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 991px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.caption_for_the_picture {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.likes_social {
+    display: flex;
+    margin-bottom: 37px;
+}
+
+.like {
+    display: flex;
+    margin-right: 691px;
+}
+
+.like_counter {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.link_to_articles {
+    display: flex;
+}
+
+.title_link_to_articles {
+    font-family: Open Sans;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 26px;
+}
+
+.comment_window {
+    margin-left: 121px;
+    background-color: #ECE1E1;
+    border-radius: 10px;
+    width: 693px;
+    padding-top: 44px;
+    padding-left: 100px;
+    padding-bottom: 49px;
+    margin-bottom: 77px;
+}
+
+.string1 {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.name_surname {
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.text_comment {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.text_comment_3 {
+    margin: 0;
+}
+
+.form_comment_all {
+    margin-left: 202px;
+    margin-bottom: 81px;
+    
+}
+
+.title_form_comment {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.form_comment {
+    display: flex;
+}
+
+.form_comment_name_email {
+    margin-right: 84px;
+}
+
+.text_in_form_comment {
+    width: 221px;
+    padding: 15px 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    border-color: #2E2F22;
+}
+
+.text_in_form_comment1 {
+    margin-bottom: 19px;
+}
+
+.text_in_form_comment2 {
+    margin-bottom: 52px;
+}
+
+input::placeholder {
+    opacity: 1;
+    color: #2E2F22;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text_in_comment_message {
+    width: 370px;
+    border-radius: 10px;
+    border: 1px solid #2E2F22;
+    padding-top: 18px;
+    padding-left: 20px;
+    margin: 0; 
+}
+
+#message2 {
+    opacity: 1;
+}
+
+textarea::placeholder {
+    opacity: 1;
+    color: rgba(46, 47, 34, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+.button_comment{
+    margin: 0 auto;
+    
 }
