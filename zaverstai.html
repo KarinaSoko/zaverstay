@@ -34,24 +34,25 @@
     <div class="main-content">
         <div class="oll_articles">
             <h2>Все статьи</h2>
-            <form>
-                <!-- <label for="elements">Выбрать тему</label> -->
-                <div class="exchange">
-                    <label for="elements">Выбрать тему</label>
-                    <select class="select" id="elements" name="elements">
-                        <option value="sity">Город</option>
-                        <option value="books">Книги</option>
-                        <option value="trips">Путешествия</option>
-                        <option value="recipes">Рецепты</option>
-                        <option value="photos">Фотографии</option>
-                    </select>
+            <div class="drop-down_list">
+                <button class="choose_topic text_choose_topic bottom_border_button_inactive">Выбрать тему<img class="choose_topic_img"
+                        src="src/img/Polygon 1.svg">
+                </button>
+                <div class="list inactive">
+                    <div class="list_of_tags ">
+                        <button class="list_of_tags_button text_choose_topic" id="button_trip">Пушетествия</button>
+                        <button class="list_of_tags_button text_choose_topic" id="button_city">Город</button>
+                        <button class="list_of_tags_button text_choose_topic" id="button_book">Книги</button>
+                        <button class="list_of_tags_button text_choose_topic" id="button_photo">Фотографии</button>
+                        <button class="rounding_bottom_corners list_of_tags_button text_choose_topic" id="button_recipe">Рецепты</button>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
         <section class="articles">
             <div class="article_1_2_3">
-                <div class="article_1">
-                    <img src="src/img/articles.jpg" width="387">
+                <div class="news-block article article_1 " data-category="trip">
+                    <img  src="src/img/articles.jpg" width="387">
                     <h3>
                         Путешествие в Берлин в августе
                     </h3>
@@ -63,7 +64,7 @@
                         <p class="date">29.09.2020</p>
                     </div>
                 </div>
-                <div class="article_2">
+                <div class="news-block article article_2" data-category="city">
                     <img src="src/img/articles (2).jpg" width="387">
                     <h3>
                         Где выпить колдбрю в Москве
@@ -76,7 +77,7 @@
                         <p class="date">24.07.2020</p>
                     </div>
                 </div>
-                <div class="article_3">
+                <div class="news-block article article_3" data-category="book">
                     <img src="src/img/articles 3.jpg" width="387">
                     <h3>
                         Прочитано: книжные рекомендации
@@ -88,10 +89,11 @@
                         <p class="tag">Теги: книги</p>
                         <p class="date">15.07.2020</p>
                     </div>
+
                 </div>
             </div>
             <div class="article_4_5">
-                <div class="article_4">
+                <div class="news-block article article_4" data-category="photo">
                     <div class="text-block-white">
                         <h3 class="text_white">
                             Снимки на плёнку
@@ -108,7 +110,7 @@
                 </div>
 
 
-                <div class="article_5">
+                <div class="news-block article article_5" data-category="recipe">
                     <div class="text-block-white">
                         <h3 class="text_white">
                             Домашний чизкейк
@@ -127,7 +129,7 @@
                 <p class="button_text"> Показать еще</p>
             </button>
         </section>
-    </div>
+
 
     </div>
     <div class="section_about_me">
@@ -211,12 +213,14 @@
             <div class="form_email">
                 <h3 class="title_form_write_me"><label for="Email" class="title_you_name">Email</label></h3>
 
-                <input class="text_in_form" type="email" name="Email" id="Email" placeholder="google@gmail.com" required>
+                <input class="text_in_form" type="email" name="Email" id="Email" placeholder="google@gmail.com"
+                    required>
             </div>
         </div>
         <div class="form_message">
             <h3 class="title_form_write_me"><label for="message" class="title_you_name">Сообщение</label></h3>
-            <textarea placeholder="Напишите здесь ваше сообщение." class="text_in_form" name="message" id="message" rows="12" required ></textarea>
+            <textarea placeholder="Напишите здесь ваше сообщение." class="text_in_form" name="message" id="message"
+                rows="12" required></textarea>
         </div>
 
         <input class="button button_write_me button_text" type="submit" value="Отправить">
@@ -229,7 +233,7 @@
             <li><a class="network_list_items" href="#">Твиттер</a></li>
         </ul>
     </footer>
-
+<script src="src/js/list.js" defer></script>
 </body>
 
 </html>
