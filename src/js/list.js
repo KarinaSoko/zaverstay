@@ -1,4 +1,16 @@
 window.onload = function () {
+    let article1 = document.querySelector('.article_1');
+    let article2 = document.querySelector('.article_2');
+    let article3 = document.querySelector('.article_3');
+    let article4 = document.querySelector('.article_4');
+    let article5 = document.querySelector('.article_5');
+
+    let buttonTrip = document.getElementById('button_trip');
+    let buttonCity = document.getElementById('button_city');
+    let buttonBook = document.getElementById('button_book');
+    let buttonPhoto = document.getElementById('button_photo');
+    let buttonRecipe = document.getElementById('button_recipe');
+    let allThemes = document.getElementById('all_themes');
 
     let list = document.querySelector('.list');
     let buttonChoose = document.querySelector('.choose_topic');
@@ -10,64 +22,67 @@ window.onload = function () {
         buttonChoose.classList.toggle('bottom_border_button_inactive');
     }
 
-    let sum = function (parametrX, parametrY) {
-        let summ = parametrX + parametrY;
-        console.log(parametrX);
-        return summ;
+
+
+    let handleClick = function (select_article, select_button) {
+        let articles = document.querySelectorAll('.article');
+
+        for (let article of articles) {
+            article.classList.toggle('black_white_background');
+        }
+        select_article.classList.toggle('black_white_background');
+
+        let buttons = document.querySelectorAll('.list_of_tags_button');
+        for (let button of buttons) {
+            button.classList.remove('active_button');
+        }
+        select_button.classList.add('active_button')
+        list.classList.remove('active');
+        list.classList.add('inactive');
+        buttonChoose.classList.remove('bottom_border_button_active');
+        buttonChoose.classList.add('bottom_border_button_inactive');
     }
-    console.log(sum(5, 6));
 
-    let handleClick = function (id) {
-        console.log(id);
-    }
+    // let handleClear = function (select_button) {
+    //     let articles = document.querySelectorAll('.article');
+    //     for (let article of articles) {
+    //         article.classList.remove('black_white_background');
+    //     }
+    //     let buttons = document.querySelectorAll('.list_of_tags_button');
+    //     for (let button of buttons) {
+    //         button.classList.remove('active_button');
+    //     }
+    //     select_button.classList.add('active_button')
+    //     list.classList.remove('active');
+    //     list.classList.add('inactive');
+    //     buttonChoose.classList.remove('bottom_border_button_active');
+    //     buttonChoose.classList.add('bottom_border_button_inactive');
+    // }
 
-
-    let buttonTrip = document.querySelector('.button_trip');
-    let buttonCity = document.querySelector('.button_city');
-    let buttonBook = document.querySelector('.button_book');
-    let buttonPhoto = document.querySelector('.button_photo');
-    let buttonRecipe = document.querySelector('.button_recipe');
-
-    let article1 = document.querySelector('.article_1');
-    let article2 = document.querySelector('.article_2');
-    let article3 = document.querySelector('.article_3');
-    let article4 = document.querySelector('.article_4');
-    let article5 = document.querySelector('.article_5');
 
     buttonTrip.onclick = function () {
-        // article2.classList.toggle('black_white_background');
-        // article3.classList.toggle('black_white_background');
-        // article4.classList.toggle('black_white_background');
-        // article5.classList.toggle('black_white_background');
-        buttonTrip.addEventListener("click", handleClick(buttonTrip.id))
-        // handleClick(buttonTrip.id)
-    }
-    buttonCity.onclick = function () {
-        article1.classList.toggle('black_white_background');
-        article3.classList.toggle('black_white_background');
-        article4.classList.toggle('black_white_background');
-        article5.classList.toggle('black_white_background');
+        handleClick(article1, buttonTrip)
 
+    }
+
+    buttonCity.onclick = function () {
+        handleClick(article2, buttonCity)
     }
     buttonBook.onclick = function () {
-        article1.classList.toggle('black_white_background');
-        article2.classList.toggle('black_white_background');
-        article4.classList.toggle('black_white_background');
-        article5.classList.toggle('black_white_background');
-
+        handleClick(article3, buttonBook)
     }
     buttonPhoto.onclick = function () {
-        article1.classList.toggle('black_white_background');
-        article2.classList.toggle('black_white_background');
-        article3.classList.toggle('black_white_background');
-        article5.classList.toggle('black_white_background');
+        handleClick(article4, buttonPhoto)
 
     }
     buttonRecipe.onclick = function () {
-        article1.classList.toggle('black_white_background');
-        article2.classList.toggle('black_white_background');
-        article3.classList.toggle('black_white_background');
-        article4.classList.toggle('black_white_background');
-
+        handleClick(article5, buttonRecipe)
     }
+    allThemes.onclick = function () {
+        handleClear(allThemes)
+    }
+
+
 }
+
+
