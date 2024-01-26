@@ -43,23 +43,6 @@ window.onload = function () {
         buttonChoose.classList.add('bottom_border_button_inactive');
     }
 
-    // let handleClear = function (select_button) {
-    //     let articles = document.querySelectorAll('.article');
-    //     for (let article of articles) {
-    //         article.classList.remove('black_white_background');
-    //     }
-    //     let buttons = document.querySelectorAll('.list_of_tags_button');
-    //     for (let button of buttons) {
-    //         button.classList.remove('active_button');
-    //     }
-    //     select_button.classList.add('active_button')
-    //     list.classList.remove('active');
-    //     list.classList.add('inactive');
-    //     buttonChoose.classList.remove('bottom_border_button_active');
-    //     buttonChoose.classList.add('bottom_border_button_inactive');
-    // }
-
-
     buttonTrip.onclick = function () {
         handleClick(article1, buttonTrip)
 
